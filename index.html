@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Derad Network Brand Kit</title>
+      <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu:wght@400&family=Ubuntu+Mono:wght@400&display=swap" rel="stylesheet">
+      <script defer data-domain="brandkit.derad.net,rollup.derad.net" src="https://data.derad.org/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+      <style>
+         /* General Styles */
+         body {
+         font-family: 'Ubuntu', sans-serif;
+         background-color: #000000;
+         margin: 0;
+         padding: 0;
+         color: #fff;
+         line-height: 1.6;
+         scroll-behavior: smooth;
+         }
+         img {
+         max-width: 100%;
+         max-height: 250px;
+         height: auto;
+         }
+         /* Header Styles */
+         header {
+         background: linear-gradient(135deg, #091796, #1a0d55);
+         color: white;
+         text-align: center;
+         padding: 25px 0;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+         }
+         header h1 {
+         margin: 0;
+         font-size: 3em;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         }
+         header p {
+         font-size: 1.2em;
+         margin-top: 3px;
+         }
+         /* Container Styles */
+         .container {
+         width: 100%;
+         max-width: 1200px;
+         margin: 10px auto;
+         }
+         /* Section Styles */
+         .section {
+         margin-bottom: 40px;
+         padding-bottom: 30px;
+         animation: fadeInUp 1s ease-out;
+         }
+         .section h2 {
+         font-size: 2em;
+         margin-bottom: 20px;
+         color: #fff;
+         text-transform: uppercase;
+         font-weight: bold;
+         letter-spacing: 1px;
+         text-align: center;
+         }
+         .brand-assets {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 30px;
+         justify-content: space-between;
+         margin-top: 20px;
+         animation: fadeInUp 1s ease-out;
+         }
+         .brand-assets div {
+         flex: 1 0 45%;
+         max-width: 50%;
+         text-align: center;
+         background: #333;
+         border-radius: 10px;
+         padding: 5px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         }
+         .brand-assets div:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+         }
+         .brand-assets img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 10px;
+         margin-bottom: 15px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .brand-assets div:hover img {
+         transform: scale(1.1);
+         box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+         }
+         .download-button {
+         display: inline-block;
+         margin-top: 15px;
+         padding: 12px 25px;
+         background: linear-gradient(135deg, #6e7cfd, #64b3f4);
+         color: white;
+         font-size: 1.1em;
+         border-radius: 5px;
+         text-decoration: none;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         transition: background-color 0.3s ease, transform 0.3s ease;
+         }
+         .download-button:hover {
+         background-color: #4e90d2;
+         transform: scale(1.05);
+         }
+         /* Color Palette Styles */
+         .color-box {
+         display: inline-block;
+         width: 120px;
+         height: 120px;
+         border-radius: 8px;
+         margin: 15px;
+         transition: transform 0.3s ease;
+         }
+         .color-box:hover {
+         transform: scale(1.1);
+         cursor: pointer;
+         }
+         .color-text {
+         font-size: 1.1em;
+         text-align: center;
+         font-weight: bold;
+         margin-top: 10px;
+         color: #fff;
+         }
+         /* Font Styles */
+         .font-sample {
+         font-size: 1.5em;
+         margin-bottom: 20px;
+         text-align: center;
+         }
+         .major-mono {
+         font-family: 'Major Mono Display', monospace;
+         color: #fff;
+         }
+         .ubuntu-regular {
+         font-family: 'Ubuntu', sans-serif;
+         color: #fff;
+         }
+         .ubuntu-mono-regular {
+         font-family: 'Ubuntu Mono', monospace;
+         color: #fff;
+         }
+         /* Download Link Styles */
+         .download-link {
+         display: inline-block;
+         padding: 15px 30px;
+         background-color: #25086c;
+         color: white;
+         font-size: 1.2em;
+         text-decoration: none;
+         text-align: center;
+         border-radius: 5px;
+         letter-spacing: 1px;
+         margin-top: 30px;
+         transition: background-color 0.3s ease;
+         }
+         .download-link:hover {
+         background-color: #281367;
+         }
+         /* Scroll Animation */
+         @keyframes fadeInUp {
+         from {
+         opacity: 0;
+         transform: translateY(30px);
+         }
+         to {
+         opacity: 1;
+         transform: translateY(0);
+         }
+         }
+         /* Mobile Responsiveness */
+         @media (max-width: 768px) {
+         .brand-assets div {
+         flex: 1 0 100%;
+         max-width: 100%;
+         padding: 15px;
+         }
+         .brand-assets {
+         justify-content: center;
+         }
+         .color-box {
+         width: 80px;
+         height: 40px;
+         }
+         .font-sample {
+         font-size: 1.2em;
+         }
+         header h1 {
+         font-size: 1.5em;
+         }
+         header p {
+         font-size: 0.1em;
+         }
+         .download-button {
+         padding: 10px 20px;
+         font-size: 1em;
+         }
+         .download-link {
+         padding: 12px 25px;
+         font-size: 1em;
+         }
+         }
+         /* Small Mobile Responsiveness (For Portrait Phones) */
+         @media (max-width: 480px) {
+         .brand-assets div {
+         padding: 10px;
+         }
+         .color-box {
+         width: 60px;
+         height: 60px;
+         }
+         .font-sample {
+         font-size: 1em;
+         }
+         header h1 {
+         font-size: 1.8em;
+         }
+         header p {
+         font-size: 1em;
+         }
+         .download-button {
+         padding: 8px 16px;
+         font-size: 0.9em;
+         }
+         .download-link {
+         padding: 10px 20px;
+         font-size: 0.9em;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Derad Network Brand Kit</h1>
+      </header>
+      <div class="section">
+         <center><a href="https://brand-kit.derad.net/derad-network-brand-kit.zip" class="download-link" download>Download Full Brand Kit</a></center>
+      </div>
+      <div class="container">
+         <!-- Logo Outlines Section -->
+         <div class="section">
+            <h2>Icon - Outlines</h2>
+            <div class="brand-assets">
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-outlines/black.png" alt="Icon Outline Black">
+               </div>
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-outlines/white.png" alt="Icon Outline White">
+               </div>
+            </div>
+         </div>
+         <div class="section">
+            <h2>Icon - Transparent</h2>
+            <div class="brand-assets">
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-transparent/icon-black-transparent.png" alt="Icon Transparent Black">
+               </div>
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-transparent/icon-white-transparent.png" alt="Icon Transparent White">
+               </div>
+            </div>
+         </div>
+         <div class="section">
+            <h2>Icon - With background</h2>
+            <div class="brand-assets">
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-with-background/icon-white-background.png" alt="Icon Background White">
+               </div>
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/icon-with-background/icon-black-background.png" alt="Icon Background Black">
+               </div>
+            </div>
+         </div>
+         <!-- Logo Transparent Background Section -->
+         <div class="section">
+            <h2>Logo - Transparent Background</h2>
+            <div class="brand-assets">
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/logo-transparent/logo-black-transparent.png" alt="Logo Transparent Black">
+               </div>
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/logo-transparent/logo-white-transparent.png" alt="Logo Transparent White">
+               </div>
+            </div>
+         </div>
+         <!-- Logo with Background Section -->
+         <div class="section">
+            <h2>Logo - With Background</h2>
+            <div class="brand-assets">
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/logo-with-background/logo-white-background.png" alt="Logo With Background Black">
+               </div>
+               <div>
+                  <img src="https://brand-kit.derad.net/derad-network-brand-kit/logo-with-background/logo-black-background.png" alt="Logo With Background White">
+               </div>
+            </div>
+         </div>
+         <!-- Color Palette Section -->
+         <div class="section">
+            <h2>Color Palette</h2>
+            <div class="brand-assets">
+               <div class="color-box" style="background-color: #00d5ff;"></div>
+               <p class="color-text">#00d5ff</p>
+               <div class="color-box" style="background-color: #4e7abb;"></div>
+               <p class="color-text">#4e7abb</p>
+               <div class="color-box" style="background-color: #0c041e;"></div>
+               <p class="color-text">#0c041e</p>
+            </div>
+         </div>
+         <!-- Brand Fonts Section -->
+         <div class="section">
+            <h2>Brand Fonts</h2>
+            <div>
+               <p class="font-sample major-mono">Major Mono Display</p>
+               <p class="font-sample ubuntu-regular">Ubuntu Regular</p>
+               <p class="font-sample ubuntu-mono-regular">Ubuntu Mono Regular</p>
+            </div>
+         </div>
+         <h2>Derad Network's Brand Assets are Valuable to Us</h2>
+         <h3>We Kindly Request That You Adhere to the Following Guidelines:</h3>
+         <p>Do not alter the logo: No cropping, rotating, or color changes.</p>
+         <p>No effects: Avoid shadows, transparency, or gradients.</p>
+         <p>Use official typeface: Do not modify the font.</p>
+         <p>Maintain clear space: Keep sufficient padding around the logo.</p>
+         <p>Use official files: Only use provided logo files, no custom versions.</p>
+         <p>If you need some modifications or a custom version of the asset, please contact <a href="mailto:nt@derad.net">nt@derad.net</a></p>
+         <!-- Download Link Section -->
+         <div class="section">
+            <center><a href="https://brand-kit.derad.net/derad-network-brand-kit.zip" class="download-link" download>Download Full Brand Kit</a></center>
+         </div>
+      </div>
+   </body>
+</html>
